@@ -1,0 +1,14 @@
+//Author Jihan_Alam ID_16301199
+sitemap home label="The Augmented Smart Home System"
+{
+        Frame label="Bedroom"{
+                Switch item=S1
+                Switch item=S2
+                Switch item=S3
+                Switch item=S4
+        }
+        Frame label="Security"{
+                Switch item=SecuritySystem
+                Text item=DSensor0000
+        }
+}

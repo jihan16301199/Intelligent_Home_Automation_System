@@ -1,0 +1,10 @@
+//Author Jihan_Alam ID_16301199
+//Bedroom
+Switch S1 "Reading Light" <lightbulb> { mqtt=">[broker:TASmartHome/utilities/SwitchSystem0001:command:ON:S1ON],>[broker:TASmartHome/utilities/SwitchSystem0001:command:OFF:S1OFF],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:ON:S1ON],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:OFF:S1OFF]", autoupdate="false"}
+Switch S2 "Night Light" <lightbulb> { mqtt=">[broker:TASmartHome/utilities/SwitchSystem0001:command:ON:S2ON],>[broker:TASmartHome/utilities/SwitchSystem0001:command:OFF:S2OFF],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:ON:S2ON],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:OFF:S2OFF]", autoupdate="false"}
+Switch S3 "Fan" <fan_ceiling> { mqtt=">[broker:TASmartHome/utilities/SwitchSystem0001:command:ON:S3ON],>[broker:TASmartHome/utilities/SwitchSystem0001:command:OFF:S3OFF],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:ON:S3ON],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:OFF:S3OFF]", autoupdate="false"}
+Switch S4 "Power Outlet" <poweroutlet_uk> { mqtt=">[broker:TASmartHome/utilities/SwitchSystem0001:command:ON:S4ON],>[broker:TASmartHome/utilities/SwitchSystem0001:command:OFF:S4OFF],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:ON:S4ON],<[broker:TASmartHome/utilities/SwitchSystem0001/state:state:OFF:S4OFF]", autoupdate="false"}
+
+//Security items
+Switch SecuritySystem "Security System"
+Contact DSensor0000 "Main  Door [%s]" <frontdoor> { mqtt="<[broker:TASmartHome/security/DoorSensor0000:state:default]" }

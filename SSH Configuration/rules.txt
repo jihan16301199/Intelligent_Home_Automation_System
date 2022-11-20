@@ -1,0 +1,9 @@
+//Author Jihan_Alam ID_16301199
+rule "Front Door Sensor"
+when
+        item DSensor0000 received update OPEN
+then
+        if(SecuritySystem.state==ON){
+                sendBroadcastNotification("SECURITY SYSTEM: Main Door Open")
+        }
+end 
